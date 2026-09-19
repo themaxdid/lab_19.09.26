@@ -69,5 +69,5 @@ int main() {
               << sizeof(example_bool) << "\t" << "\t"
               << "0" << "\t" << "\t" << "\t" 
               << "1" << std::endl;
-              
+          
 }
