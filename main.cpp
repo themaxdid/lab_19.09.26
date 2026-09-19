@@ -16,10 +16,19 @@ int main() {
               << "макс" << std::endl;
 
 
-    char example_char = 'a';
-    std::cout << "char" << "\t" << "\t"
-              << example_char << "\t" << "\t"
-              << sizeof(example_char) << "\t" << "\t" << std::endl;
+    char example_char_symbol = 'a';
+    std::cout << "char_symbol" << "\t"
+              << example_char_symbol << "\t" << "\t"
+              << sizeof(example_char_symbol) << "\t" << "\t"
+              << "-" << "\t" << "\t" << "\t"
+              << "-" << std::endl;
+
+    char example_char_digit = 1;
+    std::cout << "char_digit" << "\t" 
+              << (int)example_char_digit << "\t" << "\t"
+              << sizeof(example_char_digit) << "\t" << "\t"  
+              << (int)std::numeric_limits<char>::min() << "\t" << "\t" << "\t"
+              << (int)std::numeric_limits<char>::max() << std::endl;
 
     short example_short = 12;
     std::cout << "short" << "\t" << "\t"
